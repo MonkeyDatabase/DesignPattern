@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f3018225-e116-4c27-bc7b-a44c16ae69ee" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +23,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/io/github/monkeydatabase/prototype/readme.md" root0="SKIP_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
   </component>
@@ -33,6 +40,7 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1jwb7uQ1MuaPqMFlPs4TqbfdDc6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -163,7 +171,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Composite" />
-        <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.DecoratorInIO" />
         <item itemvalue="Application.Client (5)" />
         <item itemvalue="Application.Client" />
@@ -183,6 +190,64 @@
       <updated>1604717936403</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="722" y="53" key="#Plugins" timestamp="1606487487115">
@@ -253,6 +318,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="454" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606293066141" />
+    <state x="958" y="328" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606566841183">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="958" y="328" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1606566841183" />
     <state x="239" y="200" width="1194" height="509" key="new project wizard" timestamp="1606309635435">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

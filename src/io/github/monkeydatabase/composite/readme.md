@@ -45,14 +45,14 @@
 
 ## 组合模式在JDK中的应用
 
-1. 对应是Node，而Node是HashMap类的一个静态内部类，而Node还实现了Map.Entry接口，Entry接口为Map接口的内部接口
+1. Map是一个接口，是最高层抽象
+2. AbstractMap实现了Map接口，但是是抽象类
+3. HashMap继承了Abstract类，并实现了Map接口，相当于Composite
+4. HashMap中有put和putAll方法，可以分为向Map中添加一个节点和添加一个Map中全部的节点
+5. 而组合模式中的Leaf在HashMap中的对应是Node，而Node是HashMap类的一个静态内部类，而Node还实现了Map.Entry接口，Entry接口为Map接口的内部接口
 
    ```java
-       static claMap是一个接口，是最高层抽象
-                 2. AbstractMap实现了Map接口，但是是抽象类
-                 3. HashMap继承了Abstract类，并实现了Map接口，相当于Composite
-                 4. HashMap中有put和putAll方法，可以分为向Map中添加一个节点和添加一个Map中全部的节点
-                 5. 而组合模式中的Leaf在HashMap中的ss Node<K,V> implements Map.Entry<K,V> {
+       static class Node<K,V> implements Map.Entry<K,V> {
            final int hash;
            final K key;
            V value;
