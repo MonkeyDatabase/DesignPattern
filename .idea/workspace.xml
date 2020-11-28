@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f3018225-e116-4c27-bc7b-a44c16ae69ee" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="UML Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/io/github/monkeydatabase/prototype/readme.md" root0="SKIP_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\JetBrains\IntelliJ IDEA Educational Edition 2020.1.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1jwb7uQ1MuaPqMFlPs4TqbfdDc6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/io/github/monkeydatabase/adapter/objectadapter" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.44827586" />
+    <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace\DesignPattern\src\io\github\monkeydatabase\adapter\objectadapter" />
+      <recent name="E:\Workspace\DesignPattern\src\io\github\monkeydatabase\factory\abstractfactory\pizzastore\pizza" />
+      <recent name="E:\Workspace\DesignPattern\src\io\github\monkeydatabase\factory\factorymethod\pizza" />
+      <recent name="E:\Workspace\DesignPattern\src\io\github\monkeydatabase\uml\association\doubleassociation" />
+      <recent name="E:\Workspace\DesignPattern\src\io\github\monkeydatabase\uml\composition" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.monkeydatabase.composite.management" />
+      <recent name="io.github.monkeydatabase.decorator.coffeestore.improve" />
+      <recent name="io.github.monkeydatabase.decorator.coffeestore.beforedesign.plan2" />
+      <recent name="io.github.monkeydatabase.decorator.coffeestore.beforedesign" />
+      <recent name="io.github.monkeydatabase.bridge.phone.improve" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Workspace\DesignPattern\src\io\github\monkeydatabase\factory\abstractfactory\pizzastore" />
+      <recent name="E:\Workspace\DesignPattern\src\io\github\monkeydatabase\factory\factorymethod\pizzastore" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Composite">
+    <configuration name="Client (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.monkeydatabase.decorator.coffeestore.improve.Client" />
+      <module name="DesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.monkeydatabase.decorator.coffeestore.improve.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.monkeydatabase.composite.universitymanagement.Client" />
+      <module name="DesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.monkeydatabase.composite.universitymanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.monkeydatabase.decorator.coffeestore.beforedesign.plan2.Client" />
+      <module name="DesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.monkeydatabase.decorator.coffeestore.beforedesign.plan2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.monkeydatabase.builder.buildhouses.beforedesign.Client" />
+      <module name="DesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.monkeydatabase.builder.buildhouses.beforedesign.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.monkeydatabase.prototype.CloneSheep.improve.Client" />
+      <module name="DesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.monkeydatabase.prototype.CloneSheep.improve.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Composite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.monkeydatabase.composite.jdksample.Composite" />
+      <module name="DesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.monkeydatabase.composite.jdksample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DecoratorInIO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.monkeydatabase.decorator.sample.DecoratorInIO" />
+      <module name="DesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.monkeydatabase.decorator.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Composite" />
+        <item itemvalue="Application.Client (1)" />
+        <item itemvalue="Application.DecoratorInIO" />
+        <item itemvalue="Application.Client (5)" />
+        <item itemvalue="Application.Client" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3018225-e116-4c27-bc7b-a44c16ae69ee" name="Default Changelist" comment="" />
+      <created>1604717936403</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604717936403</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="722" y="53" key="#Plugins" timestamp="1606487487115">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="53" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1606487487115" />
+    <state x="223" y="67" width="1089" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606293166743">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" width="1089" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606293166743" />
+    <state x="881" y="212" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605623083502">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="881" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605623083502" />
+    <state x="958" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1606531492501">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="958" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606531492501" />
+    <state x="833" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606487361198">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="833" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1606487361198" />
+    <state x="838" y="127" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605791509781">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="838" y="127" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1605791509781" />
+    <state x="733" y="208" key="FileChooserDialogImpl" timestamp="1606309614791">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="733" y="208" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606309614791" />
+    <state x="963" y="334" key="Github.CreateGistDialog" timestamp="1605684967697">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="963" y="334" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1605684967697" />
+    <state width="724" height="326" key="GridCell.Tab.0.bottom" timestamp="1606565502070">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="326" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606565502070" />
+    <state width="724" height="326" key="GridCell.Tab.0.center" timestamp="1606565502070">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="326" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606565502070" />
+    <state width="724" height="326" key="GridCell.Tab.0.left" timestamp="1606565502070">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="326" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606565502070" />
+    <state width="724" height="326" key="GridCell.Tab.0.right" timestamp="1606565502070">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="326" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606565502070" />
+    <state width="724" height="246" key="GridCell.Tab.1.bottom" timestamp="1605625807407">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="246" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605625807407" />
+    <state width="724" height="246" key="GridCell.Tab.1.center" timestamp="1605625807407">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="246" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605625807407" />
+    <state width="724" height="246" key="GridCell.Tab.1.left" timestamp="1605625807407">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="246" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605625807407" />
+    <state width="724" height="246" key="GridCell.Tab.1.right" timestamp="1605625807407">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="246" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605625807407" />
+    <state x="454" y="0" key="SettingsEditor" timestamp="1606293066141">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="454" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606293066141" />
+    <state x="239" y="200" width="1194" height="509" key="new project wizard" timestamp="1606309635435">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="239" y="200" width="1194" height="509" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1606309635435" />
+    <state x="809" y="190" key="run.anything.popup" timestamp="1606466601235">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="809" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606466601235" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606531852867">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606531852867" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
+        <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
+        <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
+        <item name="src" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+</project>
