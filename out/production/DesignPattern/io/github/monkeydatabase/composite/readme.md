@@ -42,3 +42,54 @@
 
 1. 当OrganizationComponent是抽象类时，对于叶子节点不需要而非叶子节点需要的方法，可以进行默认实现，并在方法体中*throw new UnsupportedOperationException()*，这是因为非叶子节点一定会重写该方法，如果是抽象方法的话，那叶子节点不需要这些方法还重写这些方法，浪费时间。
 2. 对于叶子节点和非叶子节点都需要的方法，如果它们使用时有差异，可以做成抽象方法，让他们去自行实现。
+
+## 组合模式在JDK中的应用
+
+1. Map是一个接口，是最高层抽象
+2. AbstractMap实现了Map接口，但是是抽象类
+3. HashMap继承了Abstract类，并实现了Map接口，相当于Composite
+4. HashMap中有put和putAll方法，可以分为向Map中添加一个节点和添加一个Map中全部的节点
+5. 而组合模式中的Leaf在HashMap中的对应是Node，而Node是HashMap类的一个静态内部类，而Node还实现了Map.Entry接口，Entry接口为Map接口的内部接口
+
+   ```java
+       static class Node<K,V> implements Map.Entry<K,V> {
+           final int hash;
+           final K key;
+           V value;
+           Node<K,V> next;
+   
+           Node(int hash, K key, V value, Node<K,V> next) {
+               this.hash = hash;
+               this.key = key;
+               this.value = value;
+               this.next = next;
+           }
+   
+           public final K getKey()        { return key; }
+           public final V getValue()      { return value; }
+   
+           public final String toString() { return key + "=" + value; }
+   
+           public final int hashCode() {
+               return Objects.hashCode(key) ^ Objects.hashCode(value);
+           }
+   
+           public final V setValue(V newValue) {
+               V oldValue = value;
+               value = newValue;
+               return oldValue;
+           }
+   
+           public final boolean equals(Object o) {
+               if (o == this)
+                   return true;
+               if (o instanceof Map.Entry) {
+                   Map.Entry<?,?> e = (Map.Entry<?,?>)o;
+                   if (Objects.equals(key, e.getKey()) &&
+                       Objects.equals(value, e.getValue()))
+                       return true;
+               }
+               return false;
+           }
+       }
+   ```
