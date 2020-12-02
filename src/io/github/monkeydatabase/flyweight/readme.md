@@ -53,4 +53,7 @@
 
 ## 享元模式在jdk中的应用
 
-> 本例分析在Integer中的应用'
+> 本例分析在Integer中的应用/integersample/IntegerSample
+
+1. IntegerCache是Integer的静态内部类，但相当于FlyweightFactory，当第一次使用到IntegerCache时，IntegerCache内部静态代码块被执行，读取本地配置，如果没有配置，则默认new出值为-128~127的Integer含256个元素的数组，每次调用valueOf方法，检测对象是否在该范围内，如果在则直接返回，如果不在，new新对象，但是不用加入IntegerCache中
+2. Integer相当于Flyweight角色，这里没有抽象和具体，只是为了生成一个Integer池，此处使用并不复杂
