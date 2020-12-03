@@ -46,7 +46,7 @@
    * *obtainFreshBeanFactory()* 方法虽然被实现，但其内部实际上是调用了一个*refreshBeanFactory()* **抽象方法** ，并把*getBeanFactory()* **抽象方法**的结果返回
    * *postProcessBeanFactory(beanFactory)* 和onRefresh()是空实现，即**钩子方法**
    ```java
-   @Override
+    @Override
    	public void refresh() throws BeansException, IllegalStateException {
    		synchronized (this.startupShutdownMonitor) {
    			// Prepare this context for refreshing.
@@ -114,7 +114,7 @@
 
 4. GenericApplicationContext继承了AbstractApplicationContext抽象类，该类虽然还是抽象类，但是对抽象方法进行了实现
    ```java
-   @Override
+    @Override
    	protected final void refreshBeanFactory() throws IllegalStateException {
    		if (!this.refreshed.compareAndSet(false, true)) {
    			throw new IllegalStateException(
@@ -123,12 +123,10 @@
    		this.beanFactory.setSerializationId(getId());
    	}
    
-   @Override
+    @Override
    	public final ConfigurableListableBeanFactory getBeanFactory() {
    		return this.beanFactory;
    	}
-   
-   
    ```
 
 5. ReactiveWebServerApplicationContext类继承了GenericReactiveWebApplicationContext，而GenericReactiveWebApplicationContext类继承了GenericApplicationContext抽象类，ReactiveWebServerApplicationContext中重写了钩子方法onRefresh
