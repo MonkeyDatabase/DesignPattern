@@ -1,6 +1,6 @@
 ## 代理模式概念
 
-1. 为一个**对象**提供一个对象，以控制对这个对象的访问，即通过代理对象访问目标对象
+1. 为一个**对象**提供一个代理对象，以控制对这个对象的访问，即通过代理对象访问目标对象
 2. 这样的好处是可以在目标对象实现的基础上，增强额外的功能操作，即扩展目标对象的功能
 3. 被代理的对象可以是远程对象、创建开销大的对象、需要安全控制的对象
 4. 代理模式有不同的形式，主要的为以下三种 静态代理、动态代理(JDK代理、接口代理)和Cglib代理(可以在内存中动态创建对象完成代理，而不需要实现接口，属于动态代理的一部分)
@@ -69,10 +69,17 @@
 1. 在内存中构建子类时，目标对象的类不能为final，因为final类不能被继承，否则会报java.lang.IllegalArgumentException
 2. 目标对象中的final/static方法不会被拦截
 
-### uml
+### Cglib代理uml
 
 1. Target类，即目标对象的类
 2. MethodInterceptor接口
 3. ProxyFactory实现MehthodInterceptor接口，实现其中的intercept方法
-4. ProxyFactory的getProxyInstance方法给目标对象target创建一个代理对象
-5. ProxyFactory的intercept方法实现对目标对象方法的调用
+4. ProxyFactory的getProxyInstance方法给目标对象target通过创建Enhancer来创建一个代理对象，并将请求回调设置为ProxyFactory对象使得请求可以被intercept方法拦截
+5. ProxyFactory的intercept方法实现对目标对象方法的调用，即拦截对代理对象的请求，并转发到目标对象target
+
+## 变体
+
+1. 内网通过代理穿透防火墙，实现对公网的访问
+2. 缓存代理，当请求资源时，先到缓存代理去取，取不到再到公网去取，然后缓存到缓存代理中
+3. 远程代理 远程对象的本地代表，通过它可以把远程的对象当作本地对象使用
+4. 同步代理，在多线程模型中，类本身不负责处理同步问题，交给同步代理来完成
