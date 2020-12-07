@@ -29,3 +29,8 @@
 4. ConcreteCommand聚合了Receiver
 5. Invoker是调用者，它聚合了Command接口的子对象
 6. 通过Command和ConcreteCommand的桥梁，解除了Invoker和Receiver之间的耦合
+
+## Command使用
+
+1. 如果各个设备没有继承统一的接口，则在ConcreteCommand中聚合各自的对象
+2. 如果各个设备有统一的接口，则可以直接在Command接口或抽象类中聚合这个统一的接口
