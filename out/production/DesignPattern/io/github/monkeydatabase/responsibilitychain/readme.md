@@ -13,7 +13,7 @@
 
 ## 问题场景的问题方案的问题
 
-> 代码见/beforedesign
+> 代码见/schoolpurchase/beforedesign
 
 1. 接收到请求后，按照采购金额调用对应审批者的审批方法完成审批
 2. 客户端会使用分支判断if-else if-else或者switch-case来对不同的采购请求处理
@@ -32,3 +32,75 @@
 * Handler请求的处理者者，定义了一个处理请求的接口有一个successor的Handler对象用于指向责任链中下一个Handler，还有一个*processRequest()* 方法用于处理请求
 * ConcreteHandlerA、ConcreteHandlerB实现或继承了Hanler类，处理自己负责的请求，可以访问它的后继者(责任链中下一个Handler对象)，如果当前请求可以处理则自己处理，如果自己处理不了则交给后继者处理
 * Request类是一个请求，Client首先创建一个Handler，传给一个Handler
+
+## 责任链模式应用
+
+> 代码见/schoolpurchase/improve
+
+1. 声明一个Approver抽象类，有各个级别的角色继承该类，并持有指向后继者的引用
+2. 声明一个PurchaseRequest作为请求的对象，在责任链中进行传递
+
+## 责任链模式在SpringMVC中的应用
+
+> 代码见/springmvcsample
+
+1. SpringMVC处理流程
+   * 当请求到达时，将请求交给DispatchServlet
+   * 遍历HandlerMapping，找到对应的HandlerMapping，并得到HandlerExecutionChain(HandlerExecutionChain内部包含了拦截器)
+   * 使用HandlerExecutionChain中的Handler遍历HandlerAdapter集合找到支持Handler的HandlerAdapter
+   * 使用HandlerAdapter得到ModelAndView
+   * 异常处理，前面四个步骤可以发生异常，HandlerExecutionResolver策略解决
+   * 根据ModelAndView使用ViewResolver进行解析
+   * ViewResolver解析得到View
+2. HandlerExecutionChain类中有一个List<HandlerInterceptor>,HandlerExecutionChain将请求交给链上的拦截器进行处理
+   * DispatchServlet有一个doDispatch方法
+      ```java
+      HttpServletRequest processedRequest = request;
+      HandlerExecutionChain mappedHandler = null;
+      boolean multipartRequestParsed = false;
+     
+     mappedHandler = getHandler(processedRequest);
+     
+     HandlerAdapter ha = getHandlerAdapter(mappedHandler.getHandler());
+     
+     if (!mappedHandler.applyPreHandle(processedRequest, response)) {
+     					return;
+     				}
+     
+     mv = ha.handle(processedRequest, response, mappedHandler.getHandler());
+     
+     mappedHandler.applyPostHandle(processedRequest, response, mv);
+      ```
+   * HandlerExecutionChain有一个applyPreHandler方法,这个方法里包含了HandlerInterceptor
+      ```java
+     boolean applyPreHandle(HttpServletRequest request, HttpServletResponse response) throws Exception {
+     		HandlerInterceptor[] interceptors = getInterceptors();
+     		if (!ObjectUtils.isEmpty(interceptors)) {
+     			for (int i = 0; i < interceptors.length; i++) {
+     				HandlerInterceptor interceptor = interceptors[i];
+     				if (!interceptor.preHandle(request, response, this.handler)) {
+     					triggerAfterCompletion(request, response, null);
+     					return false;
+     				}
+     				this.interceptorIndex = i;
+     			}
+     		}
+     		return true;
+     	} 
+     ```
+   * HandlerInterceptor接口有三个方法，
+      ```java
+     //HandlerAdapter调用handler之前
+      default boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)throws Exception {
+      
+      		return true;
+     }
+     
+     //Handler Adapter调用handler之后，在DispatchServlet渲染view之前
+     default void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, @Nullable ModelAndView modelAndView) throws Exception {
+     }
+     
+     //在渲染完view之后，用于释放资源等操作
+     default void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, @Nullable Exception ex) throws Exception {
+     }
+     ```
