@@ -37,3 +37,16 @@
 3. Customer接口或抽象类，定义了一个方法*accept(Action action)*
 4. Man、Woman实现或继承Customer
 5. Customers类中有一个List<Customer>，聚合了Customer
+
+## 双分派
+
+1. 双分派意味着执行的操作取决于请求的种类和两个接收者类型
+2. 上面的例子中，如果想增加一种评价方法的话，可以直接新建一个类实现或继承Action，而无需改动Customer相关的类
+
+## Visitor模式注意事项
+
+1. Visitor模式符合单一职责原则
+2. 访问者模式可以对功能进行统一，适用于数据结构相对稳定的系统
+3. 具体元素对访问者公布细节，违背了迪米特法则，如上例中，Action中有getManResult、getWomanResult，如果新增一个Element，那所有的Action方法都需要重写，违背了开闭原则
+4. 违背了依赖倒转原则，Action中的getManResult、getWomanResult方法的参数是具体的Man、Woman类型，而不是抽象类型
+5. 如果Element部分比较稳定，Action部分经常变化，则适合使用访问者模式
