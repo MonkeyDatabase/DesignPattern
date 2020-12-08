@@ -8,7 +8,7 @@
 
 ## 问题场景的问题方案
 
-> 代码见/weatherbroadcast
+> 代码见/weather/beforedesign
 
 1. 设计一个WeatherData类，它可以提供温度、气压、湿度数据服务，提供get方法来允许第三方获取数据
 2. 当数据更新时，气象站通过调用dataChange()更新数据，当第三方再次获取时就能获取最新数据，当然也可以推送
@@ -37,5 +37,37 @@
 
 ## Observer模式应用
 
+> 代码见/weather/improved
+
 1. 气象站WeatherStation相当于Subject
 2. 各个报社AAA、BBB、CCC相当于Observer
+
+## Observer模式在jdk中的应用
+
+> 代码见/jdksample
+
+1. JDK的Observable类使用了Observer模式
+2. java.util.Observable类中有两个属性，其中一个是容器，每个元素是一个Observer
+   ```java
+   private boolean changed = false;
+   private Vector<Observer> obs;
+   ```
+3. java.util.Observer是一个接口，其中只有一个*update()* 方法
+   ```java
+    public interface Observer {
+        /**
+         * This method is called whenever the observed object is changed. An
+         * application calls an <tt>Observable</tt> object's
+         * <code>notifyObservers</code> method to have all the object's
+         * observers notified of the change.
+         *
+         * @param   o     the observable object.
+         * @param   arg   an argument passed to the <code>notifyObservers</code>
+         *                 method.
+         */
+        void update(Observable o, Object arg);
+    }
+   ```
+4. java.util.Observable中的方法有addObserver、deleteObserver、notifyObservers方法
+5. java.util.Observable是一个具体类，不是抽象类，也不是接口，在Observer模式中既充当了Subject也充当了ConcreteSubject
+
