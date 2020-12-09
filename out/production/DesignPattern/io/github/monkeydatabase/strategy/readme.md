@@ -50,4 +50,3 @@
 1. JDK中Arrays的Comparator使用了策略模式
 2. java.util.Comparator是一个接口，其中有一个compare方法，接受两个数组元素，返回值为正数、0、负数
 3. Arrays.sort()有一个重载方法接受数组和实现了Comparator接口对象
-
