@@ -25,3 +25,7 @@
  1. 定义一个State接口，其中有reduceMoney()、raffle()、dispensePrize()
  2. NotPaidState、RaffleableState、DispensePrizeState、OutOfPrizeState实现了State接口
  3. Activity是活动类，它含有所有的状态对象，各个状态对象也包含Activity的引用
+ 
+ ## State模式Tips
+ 
+ * 最好与软件工程的状态图配合使用，将边上的操作写到State接口中，将块上的状态写成实现State接口的类
