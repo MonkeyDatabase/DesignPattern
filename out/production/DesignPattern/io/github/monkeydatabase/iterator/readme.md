@@ -45,3 +45,8 @@
 3. College接口，作为学院的抽象层
 4. DryadCollege、NecromancerCollege实现College接口，它们聚合了自己下属所有Department，并各自聚合了一个Iterator用于遍历自己的下属部门
 5. Department是最基本组成元素
+
+## Iterator模式在jdk中的应用
+
+1. List接口中声明了Iterator<E> iterator()方法用于返回一个迭代器
+2. JDK中为每种List内使用内部类的方式写了各个集合的迭代器，可以通过iterator()返回一个可用于当前集合的迭代器
