@@ -1,8 +1,6 @@
 ## 问题场景
 
-1. 编程实现一个游戏功能
-2. 一个玩家控制一个Player，这个Player攻击力和防御力
-3. 当打完大龙之后，会加一个buff和一个debuff，当buff和debuff期过后，需要恢复到普通状态
+1. 编程实现一个游戏存档功能
 
 ## 传统方案
 
@@ -12,7 +10,7 @@
 ## 传统方案的问题
 
 1. 一个对象对应一个保存对象状态的对象，当游戏对象很多时，不利于管理，开销也很大
-2. 传统的方式是简单地备份，new另一个对象出来，需要把需要备份的数据放到这个新对象中，这暴露了Player对象的细节。
+2. 传统的方式是简单地备份，new另一个对象出来，需要把需要备份的数据放到这个新对象中，这暴露了Player对象的全部细节。
 3. 所以需要使用Memento模式
 
 ## Memento模式概念
@@ -26,10 +24,16 @@
 1. Originator对象，即数据源对象
 2. Memento对象，用于保存Originator的对象
 3. Originator依赖Memento
-4. CareTaker聚合Memento，当有多个Originator和多个Memento时，可以靠CareTaker维护Memento对象
+4. CareTaker聚合Memento，当有多个Originator和多个Memento时，可以靠CareTaker维护Memento对象，当只用存一个Player的状态时用List即可，当多个Player时可以用Map
 5. Client依赖Originator
 
 ## Memento模式的特点
 
 1. Memento不同于Command，Command模式记录了一系列操作且每次Undo或Redo一个命令，而Memento只记录一个状态，不论进行了多少操作，可以直接恢复状态
 2. Memento模式不同于Decorator，本问题场景的buff、debuff我认为用装饰者模式更加好用，因为除了这两种buff还会有各种buff，不过装饰者模式不利于去掉某一层buff，即恢复到装饰之前可能出现问题
+
+## Memento模式应用场景
+
+1. 游戏的存档
+2. 数据库的事务管理
+3. 操作系统的快照
